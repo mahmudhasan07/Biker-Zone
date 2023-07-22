@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker Zone</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/logo.jpeg">
+    <style>
+        .btn:hover {
+            background-color: whitesmoke;
+            color: #E76F51;
+            border: 2px solid #E76F51;
+
+        }
+    </style>
+
+</head>
+
+<body class="bg-white text-black">
+    <header class="lg:mx-16">
+        <nav class="h-10">
+            <div class="navbar ">
+                <div>
+                    <img class="w-10 lg:w-20 border-4 border-black" src="images/logo.jpeg " alt="">
+                </div>
+                <div class="navbar-start ">
+                    <div class="dropdown text-black">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white">
+                            <li><a>Home</a></li>
+                            <li tabindex="0">
+                                <a href="">Shop</a>
+
+                            </li>
+                            <li>
+                                <a href="">News</a>
+                            </li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl lg:text-4xl text-black">Biker Zone</a>
+                </div>
+                <div class="navbar-center hidden lg:flex text-black">
+                    <ul class="menu menu-horizontal text-xl">
+                        <li><a>Home</a></li>
+                        <li tabindex="0">
+                            <a href="">Shop</a>
+
+                        </li>
+                        <li>
+                            <a href="">News</a>
+                        </li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <a class="btn bg-[#E76F51] text-white">Log In</a>
+                </div>
+            </div>
+
+        </nav>
+        <div id="header" class="my-10 bg-rose-100 py-5 lg:py-20">
+            <div class="carousel w-full my-5">
+                <div id="slide1" class=" carousel-item relative w-full">
+                    <div class="flex justify-around flex-col lg:flex-row mx-3 ">
+                        <div class=" lg:w-1/2 mb-5">
+                            <h1 class=" text-4xl lg:text-6xl font-bold  py-5">Ride-on Kawasaki Z900RS Cafe with Smile</h1>
+                            <p class=" lg:text-xl py-5">Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class="btn py-5  bg-[#E76F51] text-white">Purchase</button>
+
+                        </div>
+                        <div class="">
+                            <img src="images/slider/bike1.png" class="w-full" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="flex justify-around flex-col lg:flex-row mx-3 ">
+                        <div class=" lg:w-1/2 mb-5">
+                            <h1 class=" text-4xl lg:text-6xl font-bold  py-5">Ride-on  Yamaha MT-15 with Smile</h1>
+                            <p class=" lg:text-xl py-5">Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class="btn py-5  bg-[#E76F51] text-white">Purchase</button>
+
+                        </div>
+                        <div class="">
+                            <img src="images/mt-15.webp" class=" lg:w-[80%] " />
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="flex justify-around flex-col lg:flex-row mx-3 ">
+                        <div class=" lg:w-1/2 mb-5">
+                            <h1 class=" text-4xl lg:text-6xl font-bold  py-5">Ride-on Suzuki GXR-1000R with Smile</h1>
+                            <p class=" lg:text-xl py-5">Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class="btn py-5  bg-[#E76F51] text-white">Purchase</button>
+
+                        </div>
+                        <div class="">
+                            <img src="images/slider/bike3.png" class="w-full" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="flex justify-around flex-col lg:flex-row mx-3 ">
+                        <div class=" lg:w-1/2 mb-5">
+                            <h1 class=" text-4xl lg:text-6xl font-bold  py-5">Ride-on Harley Davidson with Smile</h1>
+                            <p class=" lg:text-xl py-5">Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class="btn py-5  bg-[#E76F51] text-white">Purchase</button>
+
+                        </div>
+                        <div class="">
+                            <img src="images/slider/bike4.png" class="w-full" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <main >
+        <!-- Best Bikes of year -->
+        <div class="my-14">
+            <h1 class="text-3xl lg:text-6xl font-semibold py-5 text-center">Best Bikes In This Year</h1>
+        </div>
+        <div class="flex flex-wrap justify-center gap-5">
+            <img class="w-60 h-72" src="images/R1-v3.jpg" alt="">
+            <img class="w-60 h-72" src="images/CBR-150R.jpg" alt="">
+            <img class="w-60 h-72" src="images/R1-v4.jpg" alt="">
+            <img class="w-60 h-72" src="images/X-motion.jpg" alt="">
+            <img class="w-60 h-72" src="images/mt-15.webp" alt="">
+        </div>
+
+        <!-- Features Information Of Bikes  -->
+
+        <div class="my-14">
+            <div>
+                <h1 class="text-3xl lg:text-6xl font-semibold py-5 text-center">latest News</h1>
+            </div>
+            <div class="flex flex-wrap justify-center ">
+                <div class="card w-96 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/others/latest1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">Ducati XDIAVEL S-73</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-[#E76F51] ">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-96 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/others/latest2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">Motorcycles & Scooters</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-[#E76F51] ">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-96 shadow-xl ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/others/latest3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">2021 Honda CBR500R</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-[#E76F51] ">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question Section -->
+
+        <section class="flex flex-col lg:flex-row my-10 lg:mx-16">
+            <div class="flex-1">
+                <img class="h-3/4" src="images/others/faq.png" alt="">
+            </div>
+            <div class="flex-1 ">
+
+                <div class="collapse collapse-arrow shadow-xl mb-5">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">
+                        <p>What are the most important things I should
+                            know about riding a bike?</p>
+                    </div>
+                    <div class="collapse-content">
+                        <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws.
+                            Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be
+                            a more focused and legally compliant bike rider. </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow shadow-xl mb-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">
+                        <p></p>How can I tell if my helmet is old and I need a
+                        new one?</p>
+                    </div>
+                    <div class="collapse-content">
+                        <ol>
+                            <li>Helmet is older than 5 years. </li>
+                            <li>The interiors have started to come off.</li>
+                            <li>The exterior is showing signs of wear & tear.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow shadow-xl mb-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">
+                        <p>My bike has been in storage is it safe to ride?</p>
+                    </div>
+                    <div class="collapse-content">
+                        <p>Before going on a long ride, take your bike around the block and make sure it is safe to
+                            ride.</p>
+                        <ul>
+                            <li>First of all, your tires are going to be deflated, it is normal after long periods of
+                                time on storage. Inflate them close to the recommended level, you can find that in the
+                                wall of the tire.</li>
+                            <li>Make sure your brakes work. First do it off your bike, make sure the brake pads make
+                                contact with the rim or the rotor appropriately. Then do it with while riding your bike
+                                around the block. Make sure you test it with enough speed, but do it safely. It is
+                                common for cables to stretch and for air to build up in hydraulic brakes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow shadow-xl mb-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">
+                        <p>What rules should I follow when riding my bike</p>
+                    </div>
+                    <div class="collapse-content">
+                        <ul>
+                            <li>PROTECT YOUR HEAD <br>
+                                Our head is one of the most sensitive and critical parts of the body and any injury in
+                                this particular area can be life-threatening. Therefore, make sure that you wear a
+                                helmet and other safety gear before going out on your bicycle. Wear knee caps and biking
+                                gloves as well. Protective eye-wear can also be used to safeguard your eyes from the
+                                wind and the dust which can hamper with your visibility. A sturdy helmet with a belted
+                                fixture is essential for all cycling enthusiasts. Even if your kids are riding a bicycle
+                                at home, wearing the safety gear can help them build their habits.</li>
+                            <li>OBEY THE TRAFFIC LIGHTS <br>
+                                Traffic signals are mandated to ensure the safety provisions on the road and prevent
+                                accidents. If you are bicycling on the road, make sure that you drive on the biker’s
+                                lane only. Follow the traffic signals and do not cause trouble for the pedestrians.
+                                Bicycles are much slower than automobiles and scooters. Therefore, do not ride in the
+                                middle of the road. Respect other’s concerns and give way to the other vehicles.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="">
+        <div class="flex flex-wrap justify-around py-10 bg-black text-white">
+            <div class="my-auto text-xl p-5 mb-10">
+                <div class="py-3 ">
+                    <a class="pr-10" href="">Download Now</a>
+                    <a href="">License</a>
+                </div>
+                <div class="lg:pb-2 py-3">
+                    <ul class="flex flex-wrap">
+                        <li class="my-3"><a class="pr-5" href="">About</a> </li>
+                        <li class="my-3"><a class="pr-5" href="">Features</a> </li>
+                        <li class="my-3"><a class="pr-5" href="">Pricing</a> </li>
+                        <li class="my-3"><a class="pr-5" href="">Career</a> </li>
+                        <li class="my-3"><a class="pr-5" href="">Help</a> </li>
+                        <li class="my-3"><a class="pr-5" href="">Privacy Policy</a> </li>
+
+
+                    </ul>
+                </div>
+                <div>
+                    <p>© 2020 bike. All rights reserved</p>
+                </div>
+
+            </div>
+            <div>
+                <p class="pb-2">Get The App</p>
+                <img class="pb-2" src="images/others/android.png" alt="">
+                <img class="pb-2" src="images/others/ios.png " alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
